@@ -1,0 +1,31 @@
+{
+    "entities": {
+        "Operation": {
+            "short": "Operation",
+            "verbose": "Operation"
+        },
+        "Effect": {
+            "short": "Effect",
+            "verbose": "Effect"
+        }
+      
+    },
+    "relations": {
+        "Pos_Affect": {
+            "short": "Pos_Affect",
+            "verbose": "Pos_Affect",
+            "symmetric": false
+        },
+        "Neg_Affect": {
+            "short": "Neg_Affect",
+            "verbose": "Neg_Affect",
+            "symmetric": false
+        },
+        "Affect": {
+            "short": "Affect",
+            "verbose": "Affect",
+            "symmetric": false
+        }
+       
+    }
+}

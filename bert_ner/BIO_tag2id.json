@@ -1,0 +1,7 @@
+{
+    "O":0,
+    "B-Operation":1, 
+    "I-Operation":2, 
+    "B-Effect":3, 
+    "I-Effect":4
+}

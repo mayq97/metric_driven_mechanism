@@ -1,0 +1,11 @@
+{
+    "O":0,
+    "B-Operation":1, 
+    "I-Operation":2, 
+    "L-Operation":3,
+    "U-Operation":4,
+    "B-Effect":5, 
+    "I-Effect":6, 
+    "L-Effect":7,
+    "U-Effect":8
+}
