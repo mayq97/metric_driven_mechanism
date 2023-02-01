@@ -11,7 +11,7 @@ The Operation refers to a paper’s innovative algorithm, model, and method. The
 ![Schema](./fig/schema.png)
 
 
-According to the range of metric-driven mechanism texts, the metric-driven mechanism in the abstract includes two expression types: 1) existing in a single sentence; and 2) existing in multiple sentences
+According to the range of metric-driven mechanism texts, the metric-driven mechanism in the abstract includes two expression types: 1) existing in a single sentence; and 2) existing in multiple sentences.
 
 ![pattern](./fig/patten.png)
 
@@ -19,9 +19,12 @@ According to the range of metric-driven mechanism texts, the metric-driven mecha
 
 (1): The mechanism detection model can filter papers that lack the metric-driven mechanism, which leverages SciBERT as the backbone; 
 
-(2): We utilize the encoder-decoder architecture to extract a metric-driven mechanism. The seq2seq mechanism extraction model leverages BART as the backbone. 
+(2): We utilize the encoder-decoder architecture to extract a metric-driven mechanism. The seq2seq mechanism extraction model leverages BART as the backbone;
 
 (3): The task entity extraction problem is formalized as a multi-label classification task to avoid entity normalization. The task recognition model also leverages SciBERT, which is the same as the mechanism detection model, as the backbone.
 
 ![Our framework](./fig/framework.png)
 
+In the seq2seq mechanism extraction model, for a given paper abstract, we extract the metric-driven mechanism by constructing a specific query for the Effect and Operation, which encodes vital information for the entity/relation class that we wish to identify. The query is concatenated with a paper’s abstract to feed into the model. The model-generated text is the metric-driven mechanism’s target entity.
+
+![pattern](./fig/seq2seqNER.png)
